@@ -1,5 +1,5 @@
 def calculate_height(arrangement):
-    height = 5
+    height = 0
     stack = []
 
     for char in arrangement:
