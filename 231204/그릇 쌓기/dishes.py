@@ -1,14 +1,14 @@
 def calculate_height(arrangement):
-    height = 5
+    height = 0
     stack = []
 
     for char in arrangement:
         if char == '(':
             stack.append('(')
+            height += 10
         else:
             if stack and stack[-1] == '(':
                 stack.pop()
-                height += 10
             else:
                 stack.append(')')
                 height += 5
