@@ -1,26 +1,23 @@
 def calculate_height(arrangement):
-    height = 0
+    height = 5
     stack = []
 
     for char in arrangement:
         if char == '(':
-            stack.append(char)
-        elif char == ')':
+            stack.append('(')
+            height += 10
+        else:
             if stack and stack[-1] == '(':
                 stack.pop()
-                height += 5
             else:
-                stack.append(char)
-                height += 10
+                stack.append(')')
+                height += 5
 
     return height
 
-# 예제 테스트
-arrangement1 = "))))"
-arrangement2 = "()()(()())("
+# 입력 받기
+arrangement = input()
 
-result1 = calculate_height(arrangement1)
-result2 = calculate_height(arrangement2)
-
-
-print(result2)  # 출력: 100
+# 높이 계산 및 출력
+result = calculate_height(arrangement)
+print(result)
