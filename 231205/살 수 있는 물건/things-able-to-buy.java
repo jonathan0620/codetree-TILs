@@ -5,13 +5,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
 
-        if (a == 3000) {
+        if (a >= 3000) {
             System.out.println("book");
         }
         else if (a == 1000) {
             System.out.println("mask");
         }
-        else if (a==0) {
+        else {
             System.out.println("no");
         }
 
