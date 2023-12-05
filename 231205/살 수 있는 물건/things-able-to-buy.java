@@ -8,7 +8,7 @@ public class Main {
         if (a >= 3000) {
             System.out.println("book");
         }
-        else if (a == 1000) {
+        else if (a >= 1000) {
             System.out.println("mask");
         }
         else {
