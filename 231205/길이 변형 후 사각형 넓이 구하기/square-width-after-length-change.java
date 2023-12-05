@@ -6,8 +6,10 @@ public class Main {
         sc.useDelimiter(" ");
         int a = sc.nextInt();
         int b = sc.nextInt();
-        System.out.println(a+8);
-        System.out.println(b*3);
-        System.out.print((a+8)*(b*3));
+        int c = a+8;
+        int d = b*3;
+        System.out.println(c);
+        System.out.println(d);
+        System.out.print(c*d);
     }
 }
