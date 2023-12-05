@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        sc.useDelimiter(" ");
+       
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int c = a+8;
-        int d = b*3;
-        System.out.println(c);
-        System.out.println(d);
-        System.out.print(c*d);
+        
+        a += 8; b *= 3;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.print(a*b);
     }
 }
