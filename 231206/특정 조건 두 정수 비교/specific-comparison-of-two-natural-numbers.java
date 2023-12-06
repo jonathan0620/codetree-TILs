@@ -5,19 +5,20 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
+        int answer = 0; int answer1 = 0;
         if (a < b ) {
-            System.out.print(1);
+            answer = 1;
         }
         else {
-            System.out.print(0);
+            answer = 0;
         }
 
         if (a == b) {
-            System.out.println(1);
+            answer1 = 1;
         }
         else {
-            System.out.println(0);
+            answer1 = 0;
         }
-
+        System.out.print(answer + " " + answer1);
     }
 }
