@@ -20,7 +20,7 @@ public class Main {
             System.out.println("B");
         else if(a == c && b > d)
             System.out.println("A");
-        else if (a == c && d > c)
+        else if (a == c && d > b)
             System.out.println("B");
     }
 }
