@@ -9,13 +9,27 @@ public class Main {
         b = sc.nextInt();
         c = sc.nextInt();
 
-        if (a > b && b > c){
-            System.out.print(b);
-        }else if(b > a && a > c){
-            System.out.print(a);
-        }else{
-            System.out.print(c);
+        if(a<c){
+            if(a<b){
+                if(c<b){
+                    System.out.print(c);
+                }else{
+                    System.out.print(b);
+                }
+            }else{
+                System.out.print(a);
+            }
         }
-
+        else{
+            if(b<a){
+                if(b<c){
+                    System.out.print(c);
+                }else{
+                    System.out.print(b);
+                }
+            }else{
+                System.out.print(a);
+            }
+        }
     }
 }
