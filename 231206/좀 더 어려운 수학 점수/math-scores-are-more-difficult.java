@@ -5,20 +5,22 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         // 변수 선언
-        int a, b;
+        int a, b, c, d;
         
         // 입력
         a = sc.nextInt();
         b = sc.nextInt();
+        c = sc.nextInt();
+        d = sc.nextInt();
 
         // 출력
-        if(a > b)
+        if(a > c)
             System.out.println("A");
-        else if (b>a)
-        System.out.println("B");
-        else if(a == b && b > a)
+        else if (c > a)
             System.out.println("B");
-        else if (a == b && a > b)
+        else if(a == c && b > d)
             System.out.println("A");
+        else if (a == c && d > c)
+            System.out.println("B");
     }
 }
