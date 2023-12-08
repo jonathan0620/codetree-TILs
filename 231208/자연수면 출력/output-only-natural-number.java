@@ -6,11 +6,11 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        if(a%1==0){
+        if(a>=0){
             for(int i = 0; i < b; i++){
                 System.out.print(a);
             }
-        }else if(a<0){
+        }else {
             System.out.print(0);
         }
     }
