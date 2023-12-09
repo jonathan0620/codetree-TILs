@@ -6,11 +6,11 @@ public class Main {
         a = sc.nextInt();
         int year = 0; 
         for (int i = 1; i <= a; i++) {
-            if (i % 4 == 0 && i % 100 != 0) {
+            if (i % 400 == 0) {
                 year++;
-                if(i % 100 == 0 && i % 400 == 0){
-                    year--;
-                }
+            }
+            else if(i % 100 != 0 && i % 4 == 0){
+                    year++;
             }
         }
         System.out.print(year);
