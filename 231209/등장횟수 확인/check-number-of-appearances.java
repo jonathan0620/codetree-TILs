@@ -10,6 +10,7 @@ public class Main {
                 if(i == 0){
                     cnt--;
                 }
+            }
         }
         System.out.print(cnt);
     }
