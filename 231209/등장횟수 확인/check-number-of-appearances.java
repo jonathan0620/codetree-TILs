@@ -8,7 +8,7 @@ public class Main {
             if (i % 2 == 0) {
                 cnt++;
                 if(a == 1){
-                    cnt--;
+                    cnt =0;
                 }
             }
         }
