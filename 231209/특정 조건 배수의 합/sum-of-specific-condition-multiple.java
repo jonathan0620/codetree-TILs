@@ -6,11 +6,19 @@ public class Main {
         int sumVal = 0;
         a = sc.nextInt();
         b = sc.nextInt();
-        for (int i = a; i <= b; i++) {
+        if(a <= b){
+            for (int i = a; i <= b; i++) {
             if (i % 5 == 0){
                 sumVal += i;
             }
         }
+        }else{
+            for (int i = b; i <= a; i++) {
+            if (i % 5 == 0){
+                sumVal += i;
+            }
+        }
+    }
         System.out.print(sumVal);
     }
 }
