@@ -7,7 +7,9 @@ public class Main {
             int a = sc.nextInt();
             if (i % 2 == 0) {
                 cnt++;
-            }
+                if(i == 0){
+                    cnt--;
+                }
         }
         System.out.print(cnt);
     }
