@@ -9,7 +9,6 @@ public class Main {
         for (int i = 2; i <= Math.sqrt(a); i++) {
             if (a % i == 0) {
                 satisfied = false;
-                break;
             }
         }
         if (satisfied == true) {
