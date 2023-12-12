@@ -10,6 +10,7 @@ public class Main {
         for (int i = 2; i <= a; i++) {
             if (a % i == 0) {
                 satisfied = true;
+                break;
             }
         }
         if (satisfied == true) {
