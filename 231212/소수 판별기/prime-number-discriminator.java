@@ -7,7 +7,7 @@ public class Main {
 
         boolean satisfied = true;
         for (int i = 2; i <= Math.sqrt(a); i++) {
-            if (i % a == 0) {
+            if (a % i == 0) {
                 satisfied = true;
             }
         }
