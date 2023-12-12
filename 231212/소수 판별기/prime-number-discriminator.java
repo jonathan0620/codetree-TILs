@@ -6,7 +6,7 @@ public class Main {
         int a = sc.nextInt();
 
         boolean satisfied = true;
-        for (int i = 2; i <= a; i++) {
+        for (int i = 2; i <= Math.sqrt(a); i++) {
             if (i % a == 0) {
                 satisfied = true;
             }
