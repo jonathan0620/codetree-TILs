@@ -4,24 +4,66 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // 사용자로부터 정수 n 입력 받기
         int n = scanner.nextInt();
+
+        int plus = 1;
+        int minus = n;
 
         // 위쪽 삼각형 출력
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print("* ");
+            if (i % 2 == 0) {
+                for (int j = 0; j < plus; j++) {
+                    System.out.print("* ");
+                }
+                System.out.println();
+                plus++;
+            } else {
+                for (int j = 0; j < minus; j++) {
+                    System.out.print("* ");
+                }
+                System.out.println();
+                minus--;
             }
-            System.out.println();
         }
+
+        plus = (n / 2) + 1;
+        minus = n / 2;
 
         // 아래쪽 삼각형 출력
-        for (int i = n - 1; i >= 1; i--) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print("* ");
+        if (n % 2 == 0) {
+            for (int j = 1; j <= n; j++) {
+                if (j % 2 == 0) {
+                    for (int k = 0; k < plus; k++) {
+                        System.out.print("* ");
+                    }
+                    System.out.println();
+                    plus++;
+                } else {
+                    for (int k = 0; k < minus; k++) {
+                        System.out.print("* ");
+                    }
+                    System.out.println();
+                    minus--;
+                }
             }
-            System.out.println();
+        } else {
+            for (int k = 1; k <= n; k++) {
+                if (k % 2 == 0) {
+                    for (int j = 0; j < minus; j++) {
+                        System.out.print("* ");
+                    }
+                    System.out.println();
+                    minus--;
+                } else {
+                    for (int j = 0; j < plus; j++) {
+                        System.out.print("* ");
+                    }
+                    System.out.println();
+                    plus++;
+                }
+            }
         }
 
+        scanner.close();
     }
 }
